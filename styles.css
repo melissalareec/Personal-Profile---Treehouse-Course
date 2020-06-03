@@ -42,7 +42,7 @@ a:hover {
   float: left;
   font-size: 32px;
   text-transform: uppercase;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .nav .menu {
@@ -112,6 +112,10 @@ header .profile-image:hover {
 
 .card:hover {
   border-color: #ff99ff;
+}
+
+.card h2 {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 ul.skills {
