@@ -84,7 +84,7 @@ header .profile-image {
 }
 
 header .profile-image:hover {
-    transform: scale(1.5) 2s ease;
+    transform: scale(1.5);
 }
 
 .tag {
@@ -105,13 +105,13 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 4px solid #6D2E46;
   border-radius: 6px;
   transition: all .5s;
 }
 
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #D5B9B2;
 }
 
 .card h2 {
@@ -132,7 +132,7 @@ ul.skills {
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #ECE2D0;
 }
 
 footer {
