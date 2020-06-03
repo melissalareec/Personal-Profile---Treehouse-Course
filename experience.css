@@ -42,11 +42,13 @@ a:hover {
   float: left;
   font-size: 32px;
   text-transform: uppercase;
+  letter-spacing: .1em;
 }
 
 .nav .menu {
   display: flex;
   float: right;
+  letter-spacing: .05em;
 }
 
 .nav a {
@@ -61,73 +63,24 @@ a:hover {
   transition: .80s ease;
 }
 
+/* Section Styles */
 header {
   text-align: center;
-  background: url('images/banner-river-dart.jpg') no-repeat top center ;
-  background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 150px;
+}
+
+header .page-title {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #1b2d2a;
+  font-weight: 700;
+  font-size: 32px;
+
 }
 
 header {
   line-height: 1.5;
-}
-
-header .profile-image {
-  margin: 100px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transform-origin: 50%;
-}
-
-header .profile-image:hover {
-    transform:scale(1.2) 1s ease;
-}
-
-.tag {
-  color: black;
-  padding: 10px;
-  border-radius: 5px;
-  display: table;
-  margin: 10px auto;
-}
-
-.location {
-  color: #6D2E46
-}
-
-.card {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
-}
-
-.card:hover {
-  border-color: #ff99ff;
-}
-
-ul.skills {
-  padding: 0;
-  text-align: center;
-}
-
-.skills li {
-  display: inline-block;
-  background: black;
-  color: white;
-  padding: 5px 10px;
-  margin: 5px;
-}
-
-.skills li:nth-child(odd) {
-  background: #0399ff;
 }
 
 footer {
