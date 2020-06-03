@@ -81,6 +81,7 @@ header .profile-image {
   height: 250px;
   border-radius: 50%;
   border: 2px solid white;
+  transition: transform .5s ease;
 }
 
 header .profile-image:hover {
