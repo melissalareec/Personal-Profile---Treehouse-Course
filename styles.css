@@ -42,12 +42,13 @@ a:hover {
   float: left;
   font-size: 32px;
   text-transform: uppercase;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .nav .menu {
   display: flex;
   float: right;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .nav a {
@@ -80,11 +81,10 @@ header .profile-image {
   height: 250px;
   border-radius: 50%;
   border: 2px solid white;
-  transition: all .5s;
 }
 
 header .profile-image:hover {
-    transform: scale(1.2) 2s ease;
+    transform: scale(1.5) 2s ease;
 }
 
 .tag {
