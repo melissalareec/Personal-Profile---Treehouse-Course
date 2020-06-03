@@ -83,7 +83,7 @@ header .profile-image {
 }
 
 header .profile-image:hover {
-    transform:scale(1.2) 1s ease;
+    transform:scale(1.2) 2s ease;
 }
 
 .tag {
