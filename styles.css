@@ -19,26 +19,23 @@ a {
 }
 
 a:hover {
-  color: #6633ff;
+  color: #6D2E46;
 }
 
 /* Section Styles: Header */
 
 header {
-  width: 100%;
-  height: 100px;
-  background: #D5B9B2;
-  min-height: 50px;
   position: fixed;
+  width: 100%;
+  height: 150px;
+  background: #D5B9B2;
 }
 
-header.container {
+.header-content {
   display: inline;
-  list-style-type: none;
-  overflow: hidden;
 }
 
-header .name {
+.name {
   float: left;
   font-size: 32px;
   text-transform: uppercase;
@@ -46,8 +43,7 @@ header .name {
   padding: 50px
 }
 
-header .nav-menu {
-  display: flex;
+.nav-menu {
   float: right;
   font-family: 'Quicksand', sans-serif;
   padding: 50px
@@ -67,10 +63,15 @@ header a:hover {
 
 /* Section Styles: Main */
 
+main {
+  margin-top: 150px;
+  display: flex;
+}
+
 main .home-image-banner {
+  position: relative;
   text-align: center;
   background: url('images/banner-river-dart.jpg') no-repeat top center ;
-  display: relative;
   width: 100%;
   height: 350px;
   background-size: cover;
@@ -78,7 +79,7 @@ main .home-image-banner {
   padding-top: 60px;
 }
 
-.home-image-banner .profile-image {
+main .profile-image {
   margin: 100px;
   width: 250px;
   height: 250px;
@@ -87,7 +88,7 @@ main .home-image-banner {
   transition: transform .5s ease;
 }
 
-.home-image-banner .profile-image {
+main .profile-image {
     transform: scale(1.2);
 }
 
