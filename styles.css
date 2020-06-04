@@ -63,8 +63,8 @@ header a:hover {
 /* Section Styles: Main */
 
 main {
-  width: 100%;
-  display: flex;
+  width: auto;
+  margin: auto;
 }
 
 main .home-banner {
@@ -111,8 +111,6 @@ main .page-title {
 .home-card {
   padding: 20px 40px 40px;
   margin-top: 500px;
-  width: auto;
-  mid-width: 300px;
   max-width: 500px;
   text-align: left;
   background: #0c3a44;
