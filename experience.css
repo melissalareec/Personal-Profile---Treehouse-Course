@@ -48,7 +48,6 @@ a:hover {
 .nav .menu {
   display: flex;
   float: right;
-  letter-spacing: .05em;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -82,8 +81,52 @@ header .page-title {
   font-family: 'Quicksand', sans-serif;
 }
 
-header {
-  line-height: 1.5;
+.tag {
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+
+.location {
+  color: #6D2E46
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #6D2E46;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.card:hover {
+  border-color: #D5B9B2;
+}
+
+.card h2 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.skills li:nth-child(odd) {
+  background: #ECE2D0;
 }
 
 footer {
@@ -146,11 +189,11 @@ a.social:hover {
   }
 
   header {
-    min-height: 470px;
+    min-height: 350px;
   }
 
   .nav {
-    min-width: 720px;
+    max-width: 1200px;
     padding: 0 30px;
   }
 
@@ -164,7 +207,7 @@ a.social:hover {
 
   footer {
     font-size: 1.3em;
-    min-width: 720px;
+    max-width: 1200px;
     margin: 40px auto;
   }
 
