@@ -1,16 +1,16 @@
 /* Global Layout Set-up */
 * {
   box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
   font-family: 'Quicksand', sans-serif;
   color: #222;
   background: #f9f4eb;
 }
+
 /* Link Styles */
 
 a {
@@ -25,34 +25,44 @@ a:hover {
 /* Section Styles: Header */
 
 .header-wrapper {
+  margin-top: 0;
   width: 100%;
-  height: 150px;
-  min-height: 50px;
+  min-height: 100px;
   background: #0c3a44;
   position: fixed;
-  margin: auto;
+  top: 0;
+  margin: 0 auto;
   z-index: 1;
+  border-bottom: 1px solid #0c3a44;
+}
+
+.header-content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
 header .name {
-  float: left;
-  font-size: 32px;
+  
+  font-size: 20px;
   text-transform: uppercase;
   font-family: 'Quicksand', sans-serif;
-  padding: 50px
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 header .nav-menu {
-  float: right;
+  text-align: center;
   font-family: 'Quicksand', sans-serif;
-  padding: 50px
+  padding-top: 15px;
 }
 
 header a {
+  text-align: center;
   transition: all .5s;
   color: white;
   font-weight: 300;
-  margin-right: 20px;
+  margin: 10px;
 }
 
 header a:hover {
@@ -67,40 +77,31 @@ main {
   margin: auto;
 }
 
-main .home-banner {
-  background: url('images/banner-river-dart.jpg') no-repeat top center ;
-  background-size: cover;
-  max-height: 350px;
+.banner-content {
   width: 100%;
-  position: absolute;
-  margin-top: 125px;
-  overflow: hidden;
+  background: url('images/banner-river-dart.jpg') no-repeat center ;
+  background-size: cover;
+  padding-top: 125px;
+  text-align: center;
 }
  
-main #profile-image {
-  margin: 40px;
-  padding: 10px;
-  width: 280px;
-  height: 280px;
+#profile-image {
+  text-align: center;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 1px solid #0c3a44;
   transition: transform .5s ease;
+  margin: 25px;
 }
 
 main #profile-image:hover {
     transform: scale(1.2);
 }
 
-main {
-  width: 100%;
-  display: flex;
-}
-
-main .page-title {
-  width: 100%;
-  position: absolute;
+.page-title {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 140px;
   text-transform: uppercase;
   letter-spacing: .1em;
   color: #1b2d2a;
@@ -108,32 +109,42 @@ main .page-title {
   font-size: 22px;
   font-family: 'Bebas Neue', sans-serif;
 }
+
+.card-wrapper {
+  width: 90%;
+  margin-top: 25px;
+}
+
+.experience-page {
+ 
+  text-align: center;
+}
+
+.experience-page h2 {
+  margin-bottom: 10px;
+}
 .home-card {
-  padding: 20px 40px 40px;
-  margin-top: 500px;
-  max-width: 500px;
+  margin-bottom: 10px;
+  padding: 20px;
   text-align: left;
   background: #0c3a44;
+  border-top: 1px solid  #0c3a44;
   border-bottom: 4px solid #4b7d94;
   border-radius: 5px;
   transition: all .5s;
   color: white;
 }
 
-.card {
-  padding: 20px 40px 40px;
-  margin-top: 350px;
-  max-width: 500px;
-  text-align: left;
-  background: #0c3a44;
-  border-bottom: 4px solid #4b7d94;
-  border-radius: 5px;
-  transition: all .5s;
-  color: white;
-  display: flex;
-  width: auto;
-
+.home-card h2 {
+  text-align: center;
+  margin-bottom: 5px;
 }
+
+.home-card li {
+  margin-bottom: 5px;
+  margin-left: 25px;
+}
+
 
 .card:hover {
   border-color: #0c3a44;
@@ -144,7 +155,6 @@ main .page-title {
 }
 
 .gallery {
-  margin-top: 350px;
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -177,11 +187,13 @@ footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  text-align: center;
 }
 
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  margin-top: 10px;
 }
 
 footer ul {
@@ -220,39 +232,38 @@ a.social:hover {
   clear: both;
 }
 
+
+
 /* Styles for larger screens */
-@media screen and (min-width: 720px) {
+@media (min-width: 720px) {
+  
+  .card-wrapper {
+    width: 100%;
+    display: flex;
+  }
+  .home-card {
+    display: inline-block;
+    width: 45%;
+    margin-top: 25px;
+    padding: 15px;
+    text-align: left;
+    background: #0c3a44;
+    border-top: 1px solid  #0c3a44;
+    border-bottom: 4px solid #4b7d94;
+    border-radius: 5px;
+    transition: all .5s;
+    color: white;
+  }
 
-  .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
+    .experience-page {
+      width: 100%;
       display: flex;
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+      margin-top: 10px;
+      text-align: center;
+    }
+    
+    .experience-page h2 {
+      margin-bottom: 10px;
+      text-align: center;
+    }
   }
-
-  header {
-    min-height: 350px;
-  }
-
-  .nav {
-    max-width: 1200px;
-    padding: 0 30px;
-  }
-
-  main {
-    padding-top: 20px;
-  }
-
-  main p {
-    line-height: 1.6em;
-  }
-
-  footer {
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
-  }
-
-}
